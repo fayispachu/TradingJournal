@@ -3,7 +3,9 @@ import axios from "axios";
 axios.defaults.withCredentials = true;
 
 export const axiosInstance = axios.create({
-  baseURL: "https://tradingjournal-app-fayizpachu.onrender.com/api",
+  baseURL: "http://localhost:4000/api",
 
   withCredentials: true,
 });
+
+// https://tradingjournal-app-fayizpachu.onrender.com
