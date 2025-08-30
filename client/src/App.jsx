@@ -3,9 +3,8 @@ import Home from "./pages/Home";
 import BottomNavbar from "./components/BottomNavbar";
 import Login from "./pages/Login";
 import { Toaster } from "react-hot-toast";
-import { OtherContextProvider } from "./context/OtherStates";
+import { OtherContextProvider } from "./context/OtherStates.jsx";
 import { UserContextProvider } from "./context/UserContext";
-
 function App() {
   return (
     <>
