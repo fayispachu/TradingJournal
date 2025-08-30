@@ -20,7 +20,7 @@ function App() {
             <BottomNavbar />
           </UserContextProvider>
         </OtherContextProvider>
-      </BrowserRouter>{" "}
+      </BrowserRouter>
     </>
   );
 }
