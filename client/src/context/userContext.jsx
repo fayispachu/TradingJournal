@@ -1,9 +1,8 @@
-import React, { useState, createContext } from "react";
+import React, { useState } from "react";
 import { axiosInstance } from "../lib/axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-export const UserContext = createContext();
-
+import { UserContext } from "./CreateContext";
 export const UserContextProvider = ({ children }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
