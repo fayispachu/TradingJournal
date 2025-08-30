@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import BottomNavbar from "./components/BottomNavbar";
 import Login from "./pages/Login";
 import { OtherContextProvider } from "./context/OtherStates";
-import { UserContextProvider } from "./context/userContext";
+import { UserContextProvider } from "./context/UserContext";
 import { Toaster } from "react-hot-toast";
 
 function App() {
