@@ -15,7 +15,7 @@ export const OtherContextProvider = ({ children }) => {
 
   return (
     <OtherStates.Provider
-      value={{ isAddTradeOpen, openAddTrade, closeAddTrade, isOpen,setIsOpen }}
+      value={{ isAddTradeOpen, openAddTrade, closeAddTrade, isOpen, setIsOpen }}
     >
       {children}
     </OtherStates.Provider>
