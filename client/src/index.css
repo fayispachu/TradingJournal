@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+/* Remove default borders */
+.fc .fc-daygrid-day,
+.fc .fc-scrollgrid {
+  border: none !important;
+}
+
+/* Dark day cells */
+.fc-daygrid-day-frame {
+  margin: 3px;
+  border-radius: 8px;
+  background-color: #0f0f0f;
+  transition: background-color 0.2s ease;
+  color: #e5e5e5;
+}
+
+/* Hover effect */
+.fc-daygrid-day-frame:hover {
+  background-color: #262626;
+}
+
+/* Profit cells */
+.profit-cell .fc-daygrid-day-frame {
+  background-color: rgba(22, 163, 74, 0.25) !important; /* green */
+  border-radius: 8px;
+}
+.profit-cell .fc-daygrid-day-frame:hover {
+  background-color: rgba(22, 163, 74, 0.45) !important;
+}
+
+/* Loss cells */
+.loss-cell .fc-daygrid-day-frame {
+  background-color: rgba(220, 38, 38, 0.25) !important; /* red */
+  border-radius: 8px;
+}
+.loss-cell .fc-daygrid-day-frame:hover {
+  background-color: rgba(220, 38, 38, 0.45) !important;
+}
+
+/* Reset FullCalendar default event styles */
+.fc-event,
+.fc-event-main {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Profit events - enforce dark green */
+.event-profit,
+.event-profit .fc-event-main,
+.event-profit .fc-event-title {
+  background: none !important;
+  color: #16a34a !important; /* Tailwind green-600 */
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+}
+
+/* Loss events - enforce dark red */
+.event-loss,
+.event-loss .fc-event-main,
+.event-loss .fc-event-title {
+  background: none !important;
+  color: #dc2626 !important; /* Tailwind red-600 */
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+}
+
+/* Day headers (Sun, Mon, Tue) */
+.fc .fc-col-header-cell {
+  background-color: #1a1a1a !important;
+  color: #9ca3af !important;
+  border: none !important;
+}
+
+/* Today highlight */
+.fc .fc-day-today {
+  background-color: #1f2937 !important;
+}
+
+/* Arrows */
+.fc .fc-button .fc-icon {
+  color: #22c55e !important;
+  font-size: 1.2rem;
+}
+.fc .fc-button:hover .fc-icon {
+  color: #34d399 !important;
+}
+.fc .fc-button {
+  background: transparent !important;
+  border: none !important;
+  color: #9ca3af !important;
+}
+.fc .fc-button:hover {
+  color: #22c55e !important;
+}
+
+/* Remove table borders */
+.fc .fc-scrollgrid,
+.fc .fc-scrollgrid table,
+.fc .fc-scrollgrid td,
+.fc .fc-scrollgrid th {
+  border: none !important;
+}
+.fc .fc-scrollgrid-liquid {
+  border: none !important;
+}
+
+/* Toolbar title */
+.fc .fc-toolbar-title {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #e5e5e5 !important;
+}
+/* Center text inside profit and loss events */
+.event-profit .fc-event-main,
+.event-loss .fc-event-main {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
